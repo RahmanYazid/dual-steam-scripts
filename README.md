@@ -42,12 +42,12 @@ touch ~/steam-account2/.steampid
 ### 3. Clone this repo
 
 ```bash
-git clone git@github.com:YOUR_USERNAME/dual-steam-scripts.git
+git@github.com:RahmanYazid/dual-steam-scripts.git
 cd dual-steam-scripts
 chmod +x pixelworlds.sh tidy.sh game.sh
 ```
 
-### 4. Add Hyprland window rules
+### 4. Add moving floating window
 
 Add the following to `~/.config/hypr/hyprland.conf` to allow moving and resizing windows with the mouse:
 
