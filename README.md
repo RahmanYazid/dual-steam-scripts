@@ -49,17 +49,9 @@ chmod +x pixelworlds.sh tidy.sh game.sh
 
 ### 4. Add Hyprland window rules
 
-Add the following to `~/.config/hypr/hyprland.conf` to prevent game windows from floating or going fullscreen on their own:
+Add the following to `~/.config/hypr/hyprland.conf` to allow moving and resizing windows with the mouse:
 
 ```ini
-# Tile Steam windows
-windowrulev2 = tile, class:^(steam)$, title:^(Steam)$
-windowrulev2 = suppressevent maximize, class:^(steam)$
-
-# Tile game windows and suppress fullscreen requests
-windowrulev2 = tile, class:^(steam_app_636040)$
-windowrulev2 = suppressevent fullscreen, class:^(steam_app_636040)$
-
 # Allow moving and resizing floating windows
 bindm = SUPER, mouse:272, movewindow
 bindm = SUPER, mouse:273, resizewindow
